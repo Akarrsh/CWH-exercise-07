@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    /* grid-template-columns: auto 1fr auto; */
+}
+
+header{
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: coral;
+    height: 48px;
+    padding: 0px 10vw;
+}
+
+main{
+    grid-row: 2/3;
+}
+
+footer{
+    grid-row: 3/4;
+    display: grid;
+    place-items: center;
+    padding: 18px;
+    background-color: bisque;
+}
+
+header .logo{
+    grid-column: 1/2;
+    display: grid;
+    align-items: center;
+}
+
+header .logo img{
+    height: 32px;
+}
+
+header nav{
+    grid-column: 2/3;
+}
+
+header nav ul{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 12px;
+    height: 100%;
+    align-items: center;
+}
+
+nav li{
+    list-style: none;
+}
+
+/* nav li::after{
+    content: url(arrow-up-01-Stroke-Rounded.png);
+} */
